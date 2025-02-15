@@ -86,7 +86,7 @@
                             <li class="nav-item">
                                 <a
                                     class="nav-link page-scroll"
-                                    href="contact.html"
+                                    href="index.html#contact"
                                     >Contactos</a
                                 >
                             </li>
@@ -119,7 +119,7 @@
                             oportunidades que te permitirán hacer crecer tu
                             negocio en el sector energético.
                         </p>
-                        <a href="contact.html">
+                        <a href="index.html#contact">
                             <button
                                 class="btn btn-primary d-inline-flex flex-row align-items-center"
                             >
@@ -578,6 +578,104 @@
             </div>
         </section>
 
+        <!-- Contact section -->
+        <section id="contact" class="section-bg wow fadeInUp">
+            <div class="container">
+                <div class="section-header">
+                    <h3>Contáctanos</h3>
+                    <p>
+                        ¡Estamos aquí para ayudarte! Si tienes preguntas o
+                        sugerencias sobre la apertura de estaciones de servicio
+                        o inversiones en la extracción de recursos naturales
+                        (gas, petróleo), no dudes en ponerte en contacto.
+                        Estamos encantados de ayudarte a crear un plan de
+                        inversión efectivo y con buen retorno.
+                    </p>
+                </div>
+
+                <div class="row contact-info">
+                    <div class="form col-12">
+                        <div id="sendmessage">
+                            Tu mensaje ha sido enviado. ¡Gracias!
+                        </div>
+                        <div id="errormessage"></div>
+                        <form
+                            action="thanks.html"
+                            method="get"
+                            role="form"
+                            class="contactForm"
+                        >
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        class="form-control"
+                                        id="name"
+                                        placeholder="Tu nombre"
+                                        data-rule="minlen:4"
+                                        data-msg="Ingresa al menos 4 caracteres"
+                                        required
+                                    />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        name="email"
+                                        id="email"
+                                        placeholder="Tu correo"
+                                        data-rule="email"
+                                        data-msg="Ingresa un correo electrónico válido"
+                                        required
+                                    />
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    name="subject"
+                                    id="subject"
+                                    placeholder="Asunto"
+                                    data-rule="minlen:4"
+                                    data-msg="Ingresa al menos 4 caracteres"
+                                    required
+                                />
+                            </div>
+                            <div class="form-group">
+                                <input
+                                    type="number"
+                                    class="form-control"
+                                    name="subject"
+                                    id="subject"
+                                    placeholder="Número"
+                                    data-rule="minlen:4"
+                                    data-msg="Ingresa al menos 4 caracteres"
+                                    required
+                                />
+                            </div>
+                            <div class="form-group">
+                                <textarea
+                                    class="form-control"
+                                    name="message"
+                                    rows="5"
+                                    data-rule="required"
+                                    data-msg="Por favor, escribe algo para nosotros"
+                                    placeholder="Mensaje"
+                                    required
+                                ></textarea>
+                            </div>
+                            <button class="btn btn-primary" type="submit">
+                                Enviar mensaje
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- #contact -->
+
         <!--footer-->
         <footer class="py-6">
             <div class="container">
@@ -617,7 +715,9 @@
                         <h5>Información legal</h5>
                         <ul class="list-unstyled">
                             <li>
-                                <a href="contact.html">Dirección de contacto</a>
+                                <a href="index.html#contact"
+                                    >Dirección de contacto</a
+                                >
                             </li>
                             <li>
                                 <a href="mailto:inversión_petrolera@gmail.com"
@@ -637,11 +737,6 @@
                             <li>
                                 <a href="privacy-policy.html"
                                     >Política de privacidad</a
-                                >
-                            </li>
-                            <li>
-                                <a href="cookie-policy.html"
-                                    >Política de Cookies</a
                                 >
                             </li>
                         </ul>
